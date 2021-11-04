@@ -41,7 +41,7 @@ async def filter(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                            InlineKeyboardButton("⭕️ 𝑱𝑶𝑰𝑵 𝑵𝑶𝑾 ⭕️", url=invite_link.invite_link)
                         ]
                     ]
                 ),
@@ -105,7 +105,7 @@ async def filter(client, message):
             [InlineKeyboardButton(text="NEXT »»",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
-            [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages")]
+            [InlineKeyboardButton(text=f"📜 Pages 1/{data['total']}",callback_data="pages")]
         )
         poster=None
         if API_KEY:
@@ -123,7 +123,7 @@ async def group(client, message):
         btn = []
 
         search = message.text
-        result_txt = f"**🎬 Title: {search}**\n**🌟 Rating: {random.choice(RATING)}**\n**🎭 Genre: {random.choice(GENRES)}**\n**©️ {message.chat.title} 🍿**"
+        result_txt = f"**🔖 Title: {search}**\n**🌟 Rating: {random.choice(RATING)}**\n**🎭 Genre: {random.choice(GENRES)}**\n**©️ {message.chat.title} 🍿**"
 
         nyva=BOT.get("username")
         if not nyva:
@@ -256,7 +256,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)+1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("«« BACK", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("«« BACK", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT ➡️", callback_data=f"next_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📜 Pages {int(index)+2}/{data['total']}", callback_data="pages")]
@@ -297,7 +297,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [InlineKeyboardButton("«« BACK", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(f"📃 Pages {int(index)}/{data['total']}", callback_data="pages")]
+                    [InlineKeyboardButton(f"📜 Pages {int(index)}/{data['total']}", callback_data="pages")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -307,10 +307,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', 'url=https://t.me/tg_bots_updates'),
+                    InlineKeyboardButton('Update Channel', 'url=https://t.me/joinchat/FYBCIcMfr0AyOTFl'),
                 ]
                 ]
-            await query.message.edit(text="<b>Creator : <a href='https://t.me/Pro_editor_tg'>Devcentre</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n Update Channel : <a href='https://t.me/Cml_links'>Alpha Botz</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>Creator : <a href='https://t.me/DARKWEBLOAD'>Devcentre</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n Update Channel : <a href='https://t.me/joinchat/FYBCIcMfr0AyOTFl'>Alpha Botz</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -331,7 +331,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                     InlineKeyboardButton('🤖 More Bots 🤖', url='https://t.me/tg_bots_disccurssions'),
+                     InlineKeyboardButton('🔖 More Movies 🔖', url='https://t.me/joinchat/FYBCIcMfr0AyOTFl'),
                     ]
                     ]
                 
@@ -362,7 +362,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                     InlineKeyboardButton('🤖 More Bots 🤖', url='https://t.me/tg_bots_disccurssions'),
+                     InlineKeyboardButton('🏅 MORE MOVIES 🏅', url='https://t.me/joinchat/FYBCIcMfr0AyOTFl'),
                     ]
                     ]
                 

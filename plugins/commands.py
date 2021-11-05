@@ -93,7 +93,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('⭕️ 𝑱𝑶𝑰𝑵 𝑵𝑶𝑾 ⭕️', url='https://t.me/joinchat/FYBCIcMfr0AyOTFl'),
-                        InlineKeyboardButton('⭕️ 𝑴𝒐𝒓𝒆 ⭕️', url='https://t.me/joinchat/JLpa_zTZbKU3ZWZl')
+                        InlineKeyboardButton('⭕️ 𝑴𝑶𝑹𝑬 ⭕️', url='https://t.me/joinchat/JLpa_zTZbKU3ZWZl')
                     ]
                     ]
                 await bot.send_cached_media(

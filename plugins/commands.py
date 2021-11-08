@@ -81,7 +81,7 @@ async def start(bot, cmd):
             for files in filedetails:
                 title = files.file_name
                 size=get_size(files.file_size)
-                f_caption=files.caption
+                caption=f'<code>{files.file_name}</code>\n\n<i>© Powered by @universalmoviesS</i>',
                 if CUSTOM_FILE_CAPTION:
                     try:
                         f_caption=CUSTOM_FILE_CAPTION.format(file_name=title, file_size=size, file_caption=f_caption)

@@ -19,7 +19,7 @@ Very Sempil Bot Auto Filter bot
 ## Installation
 
 ### Easy Way
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Lallu-lallus/ALPHA_IMDB_BOT)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ateinstein12/ALPHA_IMDB_BOT.git)
 ### Hard Way
 
 ```bash
@@ -82,7 +82,7 @@ logger - Get log file
 
 ## Thanks to 
 * [Pyrogram](https://github.com/pyrogram/pyrogram)
-* Original [Repo](https://github.com/Lallu-lallus/ALPHA_IMDB_BOT)
+* Original [Repo](https://github.com/ateinstein12/ALPHA_IMDB_BOT.git)
 
 
 ## Support
